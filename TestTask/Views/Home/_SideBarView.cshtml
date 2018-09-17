@@ -1,0 +1,64 @@
+﻿
+<br />
+<br />
+<div>
+    Организатор:
+    <br />
+    <select name="organizer" title="Организатор">
+        <option value="Все" selected>Все</option>
+        <option value="Киевский метрополитен">Киевский метрополитен</option>
+        <option value="Энергоатом">Энергоатом</option>
+        <option value="УкрЗализниця">УкрЗализниця</option>
+        <option value="Укрэнерко">Укрэнерго</option>
+    </select>
+</div>
+<br />
+<br />
+<div>
+    Тип:
+    <br />
+    <select name="kind" title="Тип">
+        <option value="Все" selected>Все</option>
+        <option value="Открытые торги">Открытые торги</option>
+        <option value="Закрытые торги">Закрытые торги</option>
+        <option value="Анализ цен">Анализ цен</option>
+        <option value="Укрэнерко">Укрэнерко</option>
+    </select>
+</div>
+<br />
+<br />
+<div>
+    Категория:
+    <br />
+    <select name="category" title="Категория">
+        <option value="Все" selected>Все</option>
+        <option value="Химическая продукция">Химическая продукция</option>
+        <option value="Одежда, обувь, сумки и аксессуары">Одежда, обувь, сумки и аксессуары</option>
+        <option value="Нефтепродукты, топливо, электроэнергия">Нефтепродукты, топливо, электроэнергия</option>
+        <option value="Печатная продукция">Печатная продукция</option>
+    </select>
+
+    <br />
+    <br />
+    <fieldset title="Сортировать">
+        <input type="radio" id="sortChoice0"
+               name="sort" value="Date" selected />
+        <label for="sortChoice0">Дате</label>
+        <input type="radio" id="sortChoice1"
+               name="sort" value="Price" />
+        <label for="sortChoice1">Цене</label>
+        <input type="radio" id="sortChoice2"
+               name="sort" value="Category" />
+        <label for="sortChoice2">Категории</label>
+    </fieldset>
+    <br />
+    с: <input type="date" name="dateFrom" class="date" />
+    по: <input type="date" name="dateTo"  class="date"/>
+</div>
+<br />
+<br />
+<div class="sub-button">
+<input type="submit" id="submit" value="Поиск" />
+</div>
+
+

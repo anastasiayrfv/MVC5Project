@@ -1,0 +1,34 @@
+﻿@model TestTask.Models.IndexViewModel
+@using TestTask.Helpers
+
+<table cellpadding="4">
+    <tbody id="tabledata">
+        @foreach (TestTask.Models.Tender t in Model.Tenders)
+        {
+            <tr>
+                <td>
+                    Id: @t.Id  <br />
+                    <a href="/Data/DatailInformation/@t.Id">
+                        Предмет: @t.Subject
+                    </a>
+                    <br />
+                    <br />
+                    Организатор: @t.Organizer
+                </td>
+                <td>
+                    Цена: @t.Price
+                    @t.Currency
+                </td>
+                <td>
+                    Прием заявок: <br\>
+                    с: @t.Start 
+                    по: @t.End
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+<br />
+
+

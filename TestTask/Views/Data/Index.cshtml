@@ -1,0 +1,60 @@
+﻿
+@model TestTask.Models.Tender
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataController</title>
+</head>
+<body>
+
+
+    @section Body{
+        <header class="header">
+            <strong><a href="http://localhost:49851/Home/Index">На главную</a></strong>
+        </header>
+        <div>
+            <table>
+                <caption>Детальная информация</caption>
+                <tr>
+                    <td>
+                        Тендер № @Model.Id  <br />
+                        <br />
+                        @Model.Subject
+                        @Model.Desciption
+                        @Model.Kind
+                        @Model.Category
+                    </td>
+                    <td>
+                        Цена: @Model.Price
+                        @Model.Currency
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Организатор: @Model.Organizer
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Дата публикации: @Model.Date.Date
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Прием заявок:  @Model.Start.Date  -   @Model.End.Date
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    }
+</body>
+</html>

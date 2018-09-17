@@ -1,0 +1,39 @@
+﻿@model TestTask.Models.IndexViewModel
+@using TestTask.Helpers
+
+@section Body{
+
+    <header  class="header">
+        <strong> Тендеры </strong>
+</header>
+
+    @using (Ajax.BeginForm("_TenderView", "Home", new AjaxOptions { UpdateTargetId = "tabledata" }))
+    {
+        <div class="middle">
+            <form action="/Home/_TenderView" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#tabledata" id="form0" method="post">
+                <div class="container">
+                    <main class="content">
+                        <div class="search-box"><input type="text" name="search" class="search"> </div>
+                        @Html.Partial("_TenderView")
+                        <div class="btn-group-container">
+                            <div class="btn-group">
+                                @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x }))
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <aside class="left-sidebar">
+                    @Html.Partial("_SideBarView")
+                </aside>
+            </form>
+        </div>
+    }
+
+    @Scripts.RenderFormat(@"<script src='{0}' defer></script>", "~/scripts/jquery-1.10.2.min.js")
+    @Scripts.RenderFormat(@"<script src='{0}' defer></script>", "~/scripts/jquery.unobtrusive-ajax.js")
+
+}
+
+
+
+

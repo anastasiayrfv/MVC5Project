@@ -1,0 +1,127 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: antiquewhite;
+    color: #656665;
+    border: 16px solid antiquewhite;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+tr:hover td {
+    background: #99bcff;
+}
+
+td {
+    background: #F5D7BF;
+    padding: 10px;
+}
+
+
+
+
+
+.middle {
+    border-left: 310px solid antiquewhite;
+    position: relative;
+    padding:2px;
+}
+
+    .middle:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-right: -100%;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.header {
+height:50px;
+text-align:center;
+}
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+    float: left;
+    width: 300px;
+    position: relative;
+    background: antiquewhite;
+    left: -300px;
+}
+
+
+#submit {
+   margin:auto;
+}
+
+.search-box {
+
+    width: 90%;
+    height: 50px;
+    border: 16px solid antiquewhite;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+.sub-button {
+
+display:block;
+text-align:center;
+}
+.search {
+    width: 100%;
+}
+
+.btn-group-container {
+    display: block;
+    text-align: center;
+}
+
+.date {
+width:120px;
+}
